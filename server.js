@@ -34,7 +34,7 @@ app.post('/convert', (req, res) => {
       console.error(`stderr: ${stderr}`);
     }
 
-    res.download(outputFile, 'converted_document.docx', (err) => {
+    res.download(outputFile, 'legalappa_doc.docx', (err) => {
       if (err) {
         console.error(`Error sending file: ${err}`);
       }
